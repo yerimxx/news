@@ -7,10 +7,7 @@ def clean_text(s):
     result = hangul.findall(s)
     return result
 
-def convert_text(s):
-    table = str.maketrans('美','앩 ')
-    result= s.translate(table)
-    return result
+
 
 
 train= pd.read_csv("train_data.csv")
